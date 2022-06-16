@@ -8,11 +8,47 @@ body {
     display: flex;
     flex-direction: column;
 }
+nav {
+    width: 100vw;
+    height: 60px;
+}
+
+nav ul {
+    text-align: center;
+    list-style: none;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 2px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    background-color: #b8b8b8;
+    border: 1px solid #b8b8b8;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #ffffff;
+}
+
+nav ul li a:hover {
+    cursor: pointer;
+}
+
+.active {
+    background-color: #ffffff;
+    border: 1px solid #b8b8b8;
+    color: #b8b8b8;
+}
 .container {
     display: grid;
     width: 55%;
     height: 70vh;
-    margin-top: calc(50vh - calc(70vh / 2));
+    margin-top: calc(50vh - 60px - calc(70vh / 2));
     margin-left: 10vw;
 
     /* 14 rows , 6 coloumns */

@@ -17,7 +17,6 @@ body {
 nav {
     width: 100vw;
     height: 60px;
-    background-color: #ffffff;
 }
 nav ul {
     text-align: center;
@@ -64,7 +63,7 @@ nav ul li a:hover {
     width: 70%;
     height: 500px;
     margin: auto;
-    margin-top: calc(50vh - calc(500px / 2));
+    margin-top: calc(50vh - 60px - calc(500px / 2));
 }
 
 .plan-item:first-child {
