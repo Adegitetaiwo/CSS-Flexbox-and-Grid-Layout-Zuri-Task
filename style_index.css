@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: hsl(0, 0%, 95%);
+
+    /* for the header, main and footer to appear column */
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+.orange {
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(31, 77%, 52%);
+}
+.dark-cyan {
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(184, 100%, 22%);
+}
+.very-dark-cyan {
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(179, 100%, 13%);
+}
+.plan-container {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: 500px;
+    margin: auto;
+    margin-top: calc(50vh - calc(500px / 2));
+}
+
+.plan-item:first-child {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 55px;
+}
+
+.plan-item:nth-child(2) {
+    background-color: hsl(184, 100%, 22%);
+    padding: 55px;
+}
+
+.plan-item:last-child {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 55px;
+}
+
+.learn-mr-btn {
+    border: 1px solid hsl(0, 0%, 95%);
+    background-color: hsl(0, 0%, 95%);
+    width: 70%;
+    height: 47px;
+    border-radius: 100px;
+}
+.plan-item:first-child button:hover {
+    color:hsl(0, 0%, 95%);
+    background-color: hsl(31, 77%, 52%);
+}
+.plan-item:nth-child(2) button:hover {
+    color:hsl(0, 0%, 95%);
+    background-color: hsl(184, 100%, 22%);
+}
+.plan-item:last-child button:hover {
+    color:hsl(0, 0%, 95%);
+    background-color: hsl(179, 100%, 13%);
+}
+
+.plan-item h1,
+.plan-item p {
+    color: hsl(0, 0%, 95%);
+    margin-top: 30px;
+}
+.plan-item h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.5rem;
+}
+.plan-item p {
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 25px;
+}
+.plan-item button {
+    margin-top: 72px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+/* width 1280px - Nest Hub Max*/
+@media (max-width: 1280px) {
+    .plan-item:first-child {
+        padding: 20px;
+    }
+
+    .plan-item:nth-child(2) {
+        padding: 20px;
+        border: none;
+    }
+
+    .plan-item:last-child {
+        padding: 25px;
+        border: none;
+    }
+
+    .plan-item img,
+    .plan-item h1,
+    .plan-item p {
+        margin-top: 30px;
+    }
+}
+
+/* width 912px - Surface Pro 7*/
+@media (max-width: 912px) {
+    .plan-container {
+        width: 75%;
+        height: 65%;
+        margin-bottom: 70px;
+    }
+
+    .plan-item:first-child {
+        padding: 30px;
+    }
+
+    .plan-item:nth-child(2) {
+        padding: 30px;
+        border: none;
+    }
+
+    .plan-item:last-child {
+        padding: 30px;
+        border: none;
+    }
+
+    .plan-item img,
+    .plan-item h1,
+    .plan-item p {
+        margin-top: 40px;
+    }
+
+    .plan-item button {
+        margin-top: 100px;
+    }
+}
+
+/* width 820px - ipad Air*/
+@media (max-width: 820px) {
+    .plan-container {
+        width: 75%;
+        height: 65%;
+        margin-bottom: 70px;
+    }
+
+    .plan-item:first-child {
+        padding: 30px;
+    }
+
+    .plan-item:nth-child(2) {
+        padding: 30px;
+        border: none;
+    }
+
+    .plan-item:last-child {
+        padding: 30px;
+        border: none;
+    }
+
+    .plan-item img,
+    .plan-item h1,
+    .plan-item p {
+        margin-top: 40px;
+    }
+
+    .plan-item button {
+        margin-top: 100px;
+    }
+}
+
+/* width 768px - ipad Mini*/
+@media (max-width: 768px) {
+
+    .plan-item:first-child {
+        padding: 22px;
+    }
+
+    .plan-item:nth-child(2) {
+        padding: 22px;
+        border: none;
+    }
+
+    .plan-item:last-child {
+        padding: 22px;
+        border: none;
+    }
+
+    .plan-item img {
+        margin-top: 10px;
+    }
+
+    .plan-item h1,
+    .plan-item p {
+        margin-top: 25px;
+    }
+
+    .plan-item button {
+        margin-top: 70px;
+    }
+}
+
+/* width 540px - Surface Duo*/
+@media (max-width: 540px) {
+
+    .plan-container {
+        display: flex;
+        flex-direction: column;
+        border-radius: 0;
+        height: 75%;
+        margin-bottom: 70px;
+    }
+
+    .plan-item:first-child {
+        border-radius: 0;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        padding: 40px;
+    }
+
+    .plan-item:nth-child(2) {
+        background-color: hsl(184, 100%, 22%);
+        padding: 40px;
+        border: none;
+    }
+
+    .plan-item:last-child {
+        border-radius: 0;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        padding: 40px;
+        border: none;
+    }
+    .plan-item h1,
+    .plan-item p {
+        margin-top: 20px;
+    }
+    .plan-item button {
+        width: 60%;
+        margin-top: 80px;
+    }
+}
+/* width 375px - iphone SE (Mobile) */
+@media (max-width: 375px) {
+    
+    .plan-container {
+        display: flex;
+        flex-direction: column;
+        border-radius: 0;
+        height: 60%;
+        margin-bottom: 70px;
+    }
+
+    .plan-item:first-child {
+        border-radius: 0;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        padding: 40px;
+    }
+
+    .plan-item:nth-child(2) {
+        background-color: hsl(184, 100%, 22%);
+        padding: 40px;
+        border: none;
+    }
+
+    .plan-item:last-child {
+        border-radius: 0;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        padding: 40px;
+        border: none;
+    }
+
+    .plan-item h1,
+    .plan-item p {
+        margin-top: 20px !important;
+    }
+    .plan-item button {
+        margin-top: 80px !important;
+    }
+}
+
+
+
